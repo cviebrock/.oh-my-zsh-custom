@@ -3,6 +3,7 @@
 This is a personal project to make it easy for me to set up my super-fancy
 [oh my zsh](http://ohmyz.sh/) theme on any new server I deploy.
 
+![sample of cviebrock.theme for oh-my-zsh](https://i.imgur.com/pRI8iHl.png)
 
 ## Installation
 
