@@ -8,7 +8,7 @@ This is a personal project to make it easy for me to set up my super-fancy
 
 1. Install (oh my zsh)[http://ohmyz.sh/] as per their instructions.
 
-2. Clone this repo:
+2. Clone this repo into your home directory:
 
     ```sh
     cd ~
