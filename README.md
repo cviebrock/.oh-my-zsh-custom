@@ -1,12 +1,12 @@
 # Custom Oh-My-ZSH configuration and theme
 
 This is a personal project to make it easy for me to set up my super-fancy
-(oh my zsh)[http://ohmyz.sh/] theme on any new server I deploy.
+[oh my zsh](http://ohmyz.sh/) theme on any new server I deploy.
 
 
 ## Installation
 
-1. Install (oh my zsh)[http://ohmyz.sh/] as per their instructions.
+1. Install [oh my zsh](http://ohmyz.sh/) as per their instructions.
 
 2. Clone this repo into your home directory:
 
