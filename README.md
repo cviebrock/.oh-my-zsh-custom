@@ -10,13 +10,17 @@ This is a personal project to make it easy for me to set up my super-fancy
 
 2. Clone this repo:
 
+    ```sh
     cd ~
     git clone https://github.com/cviebrock/.oh-my-zsh-custom.git
+    ```
 
 3. Edit the following entries in your `~/.zshrc` file:
 
+    ```
     ZSH_THEME="cviebrock"
     ZSH_CUSTOM=$HOME/.oh-my-zsh-custom
+    ```
 
 4. Log out and in again.
 
