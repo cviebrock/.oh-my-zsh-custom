@@ -30,7 +30,6 @@ SEGMENT_SEPARATOR=''
 RSEGMENT_SEPARATOR=''
 DEFAULT_USER='admin'
 FAIL_SYMBOL='✘'
-ROOT_SYMBOL='★'
 JOBS_SYMBOL='⛭'
 
 # Begin a segment
@@ -79,8 +78,12 @@ rprompt_end() {
 
 # Context: user@hostname (who am I and where am I)
 prompt_context() {
+  USER_BG=026
+  if [[ $UID -eq 0 ]]; then
+    USER_BG=124
+  fi
   if [[ "$USER" != "$DEFAULT_USER" || -n "$SSH_CLIENT" ]]; then
-    prompt_segment 026 default "%(!.%{%F{white}%}.)$USER@%m"
+    prompt_segment $USER_BG default "%(!.%{%F{white}%}.)$USER@%m"
   fi
 }
 
@@ -185,7 +188,6 @@ prompt_status() {
   local symbols
   symbols=()
   [[ $RETVAL -ne 0 ]] && symbols+="%{%F{red}%}$FAIL_SYMBOL"
-  [[ $UID -eq 0 ]] && symbols+="%{%F{yellow}%}$ROOT_SYMBOL"
   [[ $(jobs -l | wc -l) -gt 0 ]] && symbols+="%{%F{cyan}%}$JOBS_SYMBOL"
 
   [[ -n "$symbols" ]] && prompt_segment 234 default "$symbols"
