@@ -17,19 +17,25 @@
     ```sh
     mv agnoster-custom/cviebrock.zsh-theme ~/.oh-my-zsh/themes
     ```
-
-4. Edit the following entry in your `~/.zshrc` file:
+4. Type your user in theme file:
+    ```sh
+    nano ~/.oh-my-zsh/themes/cviebrock.zsh-theme
+    ```
+    ```
+    DEFAULT=USER="empathy"
+    ```
+6. Edit the following entry in your `~/.zshrc` file:
     
     ```
     ZSH_THEME="cviebrock"
     ```
 
-5. Restart shell
+7. Restart shell
     ```sh
     source ~/.zshrc
     ```
 
-6. Enjoy!
+8. Enjoy!
 
 ## Features of the fork
 
