@@ -1,5 +1,7 @@
 # Custom Oh-My-ZSH agnoster-like theme
 
+![image](https://github.com/empathystorm/agnoster-custom/assets/110486386/1a988053-e89b-4ba3-8719-dcd2a4dfbf89)
+
 ## Installation
 
 1. Install [oh my zsh](http://ohmyz.sh/) as per their instructions.
@@ -32,5 +34,5 @@
 ## Features of the fork
 
 - changed color sceme
-- fixed appearing user@host prompt when entering 'su' or 'ssh'
+- fixed appearing user@host prompt when entering `su` or `ssh`
 - now in directory prompt displayed current and previous directory
