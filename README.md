@@ -36,3 +36,4 @@
 - changed color sceme
 - fixed appearing user@host prompt when entering `su` or `ssh`
 - now in directory prompt displayed current and previous directory
+- updated prompt_git from [agnoster theme code](https://github.com/ohmyzsh/ohmyzsh/blob/master/themes/agnoster.zsh-theme)
