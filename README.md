@@ -1,28 +1,36 @@
-# Custom Oh-My-ZSH configuration and theme
-
-This is a personal project to make it easy for me to set up my super-fancy
-[oh my zsh](http://ohmyz.sh/) theme on any new server I deploy.
-
-![sample of cviebrock.theme for oh-my-zsh](https://i.imgur.com/pRI8iHl.png)
+# Custom Oh-My-ZSH agnoster-like theme
 
 ## Installation
 
 1. Install [oh my zsh](http://ohmyz.sh/) as per their instructions.
 
-2. Clone this repo into your home directory:
-
+2. Clone this repo whereever you want:
+    
     ```sh
-    cd ~
-    git clone https://github.com/cviebrock/.oh-my-zsh-custom.git
+    git clone https://github.com/empathystorm/agnoster-custom.git
+    
+    ```
+3. Move zsh-theme file from repo to oh-my-zsh directory:
+    
+    ```sh
+    mv agnoster-custom/cviebrock.zsh-theme ~/.oh-my-zsh/themes
     ```
 
-3. Edit the following entries in your `~/.zshrc` file:
-
+4. Edit the following entry in your `~/.zshrc` file:
+    
     ```
     ZSH_THEME="cviebrock"
-    ZSH_CUSTOM=$HOME/.oh-my-zsh-custom
     ```
 
-4. Log out and in again.
+5. Restart shell
+    ```sh
+    source ~/.zshrc
+    ```
 
-5. Enjoy!
+6. Enjoy!
+
+## Features of the fork
+
+- changed color sceme
+- fixed appearing user@host prompt when entering 'su' or 'ssh'
+- now in directory prompt displayed current and previous directory

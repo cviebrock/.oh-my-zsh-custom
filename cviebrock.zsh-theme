@@ -28,7 +28,7 @@
 CURRENT_BG='NONE'
 SEGMENT_SEPARATOR=''
 RSEGMENT_SEPARATOR=''
-DEFAULT_USER='admin'
+DEFAULT_USER='empathy'
 FAIL_SYMBOL='✘'
 JOBS_SYMBOL='⛭'
 
@@ -82,8 +82,8 @@ prompt_context() {
   if [[ $UID -eq 0 ]]; then
     USER_BG=124
   fi
-  if [[ "$USER" != "$DEFAULT_USER" || -n "$SSH_CLIENT" ]]; then
-    prompt_segment $USER_BG default "%(!.%{%F{white}%}.)$USER@%m"
+  if [[ "$USERNAME" != "$DEFAULT_USER" || -n "$SSH_CLIENT" ]]; then
+    prompt_segment $USER_BG default "%(!.%{%F{white}%}.)$USERNAME@%m"
   fi
 }
 
@@ -169,7 +169,7 @@ prompt_hg() {
 
 # Dir: current working directory
 prompt_dir() {
-  prompt_segment 241 white '%1~'
+  prompt_segment 254 234 '%2~'
 }
 
 # Virtualenv: current working virtualenv
@@ -213,7 +213,7 @@ build_prompt() {
   RETVAL=$?
   prompt_status
   prompt_virtualenv
-#  prompt_docker
+  #prompt_docker
   prompt_context
   prompt_dir
   prompt_git
